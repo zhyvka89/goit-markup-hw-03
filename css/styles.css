@@ -219,20 +219,22 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
+
+/* Team */
+.team {
+    margin-top: 94px;
+    background: var(--secondary-background);
+}
 .team-title {
     margin-top: 0;
+    margin-bottom: 50px;
     padding-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-}
-
-/* Team */
-.team {
-    margin-top: 94px;
-    background: var(--secondary-background);
 }
 .team-list{
     display: flex;
@@ -261,11 +263,20 @@ ul {
  /*Footer  */
  .bottom {
     background: var(--background-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
  }
+ 
  .bottom span {
-     color: var(--white-color);
+    color: var(--white-color);
+ }
+ .adrs-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
  }
  .adrs-list p {
+    margin-bottom: 0;
     color: var(--white-color);
     font-style: normal;
     font-weight: 400;
@@ -273,7 +284,7 @@ ul {
     line-height: 1.7;    
     letter-spacing: 0.03em;    
  }
- .adrs-list .footer {
+ .adrs-link {
     color: var(--footer-address-color);
     font-style: normal;
     font-weight: 500;
@@ -281,8 +292,12 @@ ul {
     line-height: 16px;
     letter-spacing: 0.02em;
 }
-.adrs-list .link:hover,
-.adrs-list .link:focus {
+.mail {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.adrs-link:hover,
+.adrs-link:focus {
     color: var(--accent-color);
 }
 
