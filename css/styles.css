@@ -143,19 +143,25 @@ ul {
     color: var(--accent-color);
 }
 /* Hero */
+.page-hero {
+    background: #2F303A;
+    text-align: center;
+}
 .hero {
-    background: #2F303A;;
+    padding: 200px 0;
 }
 .hero-title {
+    margin: 0;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 .hero-link {
+    display: inline-block;
+    margin-top: 30px;
     border-radius: 4px;
     padding: 10px 32px;
     color: var(--white-color);
@@ -163,11 +169,26 @@ ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    text-align: center;
     letter-spacing: 0.06em;
 }
 /* Features */
+/* .container h2 {
+    margin-top: 0;
+} */
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.features-list {
+    display: flex;
+    justify-content: space-between;
+}
+.features-item {
+    width: 270px;
+}
 .features-list h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -175,15 +196,32 @@ ul {
     text-transform: uppercase;
 }
 .features-list p {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-/* Works and Team */
-.works-title,
+/* Works */
+.works-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.works-list {
+    display: flex;
+    justify-content: space-between;
+}
 .team-title {
+    margin-top: 0;
+    padding-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -191,14 +229,22 @@ ul {
     letter-spacing: 0.03em;
 }
 
+/* Team */
 .team {
+    margin-top: 94px;
     background: var(--secondary-background);
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
 }
 .team-list h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 .team-list p {
     color: var(--secondary-text-color);
@@ -206,6 +252,10 @@ ul {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
+    text-align: center;
+}
+.team-item {
+    background: var(--white-color);
 }
 
  /*Footer  */
