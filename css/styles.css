@@ -120,11 +120,12 @@ img {
 
 .address-header,
 .address-list {
+    margin-left: auto;
     display: flex;
 }
 
 .address-list {
-    margin-left: 331px;
+    /* margin-left: 331px; */
     padding-left: 0;
 }
 
@@ -184,11 +185,14 @@ img {
 
 .features-list {
     display: flex;
-    justify-content: space-between;
 }
-
+    
 .features-item {
     width: 270px;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .features-list h3 {
@@ -212,6 +216,10 @@ img {
 }
 
 /* Works */
+.works {
+padding-bottom: 94px;
+}
+
 .works-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -224,20 +232,22 @@ img {
 
 .works-list {
     display: flex;
-    justify-content: space-between;
 }
 
+.work-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 /* Team */
 .team {
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     background: var(--secondary-background);
 }
 
 .team-title {
     margin-top: 0;
     margin-bottom: 50px;
-    padding-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -246,12 +256,18 @@ img {
 }
 
 .team-list{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 94px;
+    display: flex;  
 }
 
-.team-list h3 {
+.team-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.team-name h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -259,7 +275,9 @@ img {
     text-align: center;
 }
 
-.team-list p {
+.team-name p {
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -272,6 +290,9 @@ img {
     background: var(--white-color);
 }
 
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
 
  /*Footer  */
  .bottom {
@@ -291,6 +312,7 @@ img {
  }
 
  .adrs-list p {
+    margin-top: 0;
     margin-bottom: 0;
     color: var(--white-color);
     font-style: normal;
@@ -309,18 +331,26 @@ img {
     letter-spacing: 0.02em;
 }
 
-.mail {
+/* .mail {
     margin-top: 9px;
     margin-bottom: 9px;
-}
+} */
 
 .adrs-link:hover,
 .adrs-link:focus {
     color: var(--accent-color);
 }
 
+.adrs-item:not(:first-child) {
+    margin-top: 9px;
+}
+
 
 /* ПОРТФОЛИО */
+.header-portfolio {
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
