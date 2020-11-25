@@ -43,6 +43,8 @@ ul {
 
 img {
     display: block;
+    min-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -152,9 +154,9 @@ img {
     background: #2F303A;
     text-align: center;
 }
-.hero {
-    padding: 200px 0;
-}
+/* .hero {
+    /* padding: 200px 0;
+} */
 .hero-title {
     margin: 0;
     color: var(--white-color);
