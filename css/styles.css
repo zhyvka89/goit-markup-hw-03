@@ -78,13 +78,16 @@ img {
 .page-nav {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .nav-list {
   display: flex;
   gap: 40px;
   font-weight: 500;
+}
+
+.nav-item {
+  padding: 24px 0;
 }
 
 .nav-item .link {
