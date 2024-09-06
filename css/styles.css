@@ -80,15 +80,11 @@ img {
   align-items: center;
 }
 
-.page-nav,
-.address-header {
-  padding: 24px 0;
-}
-
 .nav-list {
   display: flex;
   gap: 40px;
   font-weight: 500;
+  padding: 24px 0;
 }
 
 .nav-item .link {
@@ -96,6 +92,7 @@ img {
 }
 
 .address-header {
+  padding: 24px 0;
   font-style: normal;
 }
 
@@ -116,13 +113,13 @@ img {
 }
 
 .page-hero {
-  padding-top: 188px;
+  padding: 188px 0;
   background-color: #2e2f42;
   text-align: center;
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px auto;
   font-weight: 700;
   font-size: 56px;
@@ -132,7 +129,11 @@ img {
 }
 
 .hero-btn {
+  display: block;
+  margin: 0 auto;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
   font-family: "Roboto", sans-serif;
   border: none;
   font-weight: 500;
@@ -201,13 +202,14 @@ img {
 }
 
 .card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
@@ -226,6 +228,8 @@ img {
 }
 
 .page-footer .page-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   color: #4d5ae5;
 }
 
@@ -234,8 +238,7 @@ img {
 }
 
 .footer-text {
-  margin-top: 16px;
-  width: 264px;
+  max-width: 264px;
   line-height: 1.5;
   color: #f4f4fd;
 }
