@@ -86,12 +86,10 @@ img {
   font-weight: 500;
 }
 
-.nav-item {
-  padding: 24px 0;
-}
-
 .nav-item .link {
+  display: block;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .address-header {
